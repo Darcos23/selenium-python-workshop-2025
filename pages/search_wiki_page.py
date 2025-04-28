@@ -16,6 +16,8 @@ class WikiArticle(BasePage):
     TITLE = (By.CLASS_NAME, 'mw-page-title-main')
     
     def isTitlePresent(self):
+        time.sleep(3)
         title = self.find_element(self.TITLE)
         texto = title.text
+        print(texto)
         return texto

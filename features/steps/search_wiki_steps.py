@@ -14,5 +14,5 @@ def step_when_search_wiki(context):
 
 @then('El usuario encuentra el artículo titulado Python')
 def step_then_search_wiki(context):
-    context.search_wiki_page = WikiArticle(context.driver)
-    assert "Python" == context.search_wiki_page.isTitlePresent()
+    context.search_wiki_page2 = WikiArticle(context.driver)
+    assert "Python" == context.search_wiki_page2.isTitlePresent()
